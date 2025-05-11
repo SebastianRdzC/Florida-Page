@@ -36,7 +36,7 @@ import Image from "astro/components/Image.astro";
       class="relative h-screen w-full flex flex-col items-center justify-center pt-20 pb-20 px-4 section-1"
     >
       <h1
-        class="text-9xl font-[Prata] transform-to-span text-header fixed top-4 left-[50%] opacity-0 z-1"
+        class="text-9xl font-[Prata] text-header fixed top-4 left-1/2 -translate-x-1/2 opacity-0 z-10"
       >
         Florida
       </h1>
@@ -115,8 +115,7 @@ import Image from "astro/components/Image.astro";
             leading-10 px-5 justify-center
              items-center gap-5
              first-grid
-              cell-grid
-             "
+              cell-grid"
         >
           <p class="pr-30">
             En Florida, fusionamos diseño y tecnología para crear soluciones
@@ -128,11 +127,12 @@ import Image from "astro/components/Image.astro";
             y superar expectativas
           </p>
         </div>
-        <div class="flex flex-col justify-between
+        <div
+          class="flex flex-col justify-between
          h-full w-full items-center
          second-grid
-         cell-grid
-        ">
+         cell-grid"
+        >
           <div class="flex flex-col w-full gap-4">
             <h5 class="uppercase">Fundada</h5>
             <span class="text-2xl font-[Montserrat] font-medium"> 2023 </span>
@@ -144,11 +144,12 @@ import Image from "astro/components/Image.astro";
             >
           </div>
         </div>
-        <div class="flex justify-center 
+        <div
+          class="flex justify-center
         items-center relative
         third-grid
-        cell-grid
-        ">
+        cell-grid"
+        >
           <svg
             class="w-full absolute mb-30"
             viewBox="0 0 24 24"
@@ -174,14 +175,18 @@ import Image from "astro/components/Image.astro";
         <span class="text-[Montserrat] text-white/80 text-lg section-3-text">
           Nuestro trabajo
         </span>
-        <h5 class="text-4xl font-[Montserrat] font-bold section-3-text">Proyectos</h5>
+        <h5 class="text-4xl font-[Montserrat] font-bold section-3-text">
+          Proyectos
+        </h5>
       </div>
       <!-- Aqui empieza el section que deberia ser ser un flex-row -->
       <section class="w-full h-[80%] flex mt-20 px-10 gap-6">
         <!-- Aca empieza el div que tiene toda la fakin info, primer columna -->
         <div class="w-full flex flex-col gap-5">
           <div class="w-full flex flex-col gap-2">
-            <span class="text-[Montserrat] text-white/80 text-lg section-3-text">
+            <span
+              class="text-[Montserrat] text-white/80 text-lg section-3-text"
+            >
               Proyecto 1
             </span>
             <h5 class="text-5xl font-[Montserrat] font-bold section-3-text">
@@ -190,7 +195,9 @@ import Image from "astro/components/Image.astro";
           </div>
 
           <div class="w-full">
-            <p class="text-xl font-[Montserrat] tracking-wide leading-10 section-3-text">
+            <p
+              class="text-xl font-[Montserrat] tracking-wide leading-10 section-3-text"
+            >
               Una plataforma inteligente diseñada para democratizar el análisis
               de datos. Combinando un diseño intuitivo con inteligencia
               artificial, transforma información compleja en explicaciones
@@ -200,8 +207,12 @@ import Image from "astro/components/Image.astro";
         </div>
         <!-- Aca empieza la segunda columna con la fakin imagen -->
         <section class="h-30 flex justify-center bg-black flex-col"></section>
-        <div class="w-full justify-start ">
-          <img src="/images/image.png" alt="" class="rounded-lg section-3-text" />
+        <div class="w-full justify-start">
+          <img
+            src="/images/image.png"
+            alt=""
+            class="rounded-lg section-3-text"
+          />
         </div>
       </section>
     </section>
@@ -216,10 +227,14 @@ import Image from "astro/components/Image.astro";
             <span class="text-[Montserrat] text-white/80 section-4 text-lg">
               ¿Quiénes somos?
             </span>
-            <h5 class="text-5xl font-[Montserrat] font-bold section-4">Acerca de</h5>
+            <h5 class="text-5xl font-[Montserrat] font-bold section-4">
+              Acerca de
+            </h5>
           </div>
           <div class="w-full">
-            <p class="text-xl font-[Montserrat] tracking-wide leading-10 section-4">
+            <p
+              class="text-xl font-[Montserrat] tracking-wide leading-10 section-4"
+            >
               En Florida desarrollamos soluciones de software intuitivas,
               escalables y personalizables que permiten a las empresas optimizar
               sus procesos y tomar decisiones más inteligentes. Nuestra misión
@@ -238,8 +253,12 @@ import Image from "astro/components/Image.astro";
       class="h-screen w-full flex flex-col justify-center items-center mt-100 px-40"
     >
       <div class="w-full flex flex-col gap-2 justify-center items-center">
-        <span class="text-[Montserrat] text-white/80 text-lg section-5"> Hablemos </span>
-        <h5 class="text-5xl font-[Montserrat] font-bold section-5">Contáctanos</h5>
+        <span class="text-[Montserrat] text-white/80 text-lg section-5">
+          Hablemos
+        </span>
+        <h5 class="text-5xl font-[Montserrat] font-bold section-5">
+          Contáctanos
+        </h5>
       </div>
       <div class="w-full flex mt-40 font-[Montserrat]">
         <div class="w-[45%] flex flex-col items-center">
@@ -252,11 +271,13 @@ import Image from "astro/components/Image.astro";
               action=""
               class="w-full flex flex-col gap-4 w-full justify-start text-white"
             >
-              <label for="nombre" class="text-sm font-medium section-5">Nombre</label>
+              <label for="nombre" class="text-sm font-medium section-5"
+                >Nombre</label
+              >
               <input
                 type="text"
                 id="nombre"
-                class="border border-white/50 rounded h-12 px-4 
+                class="border border-white/50 rounded h-12 px-4
                 bg-transparent placeholder-white/30
                  focus:outline-none focus:ring-2
                   focus:ring-white/60 transition
@@ -264,20 +285,23 @@ import Image from "astro/components/Image.astro";
                 placeholder="Tu nombre"
               />
 
-              <label for="email" class="text-sm font-medium section-5">Email</label>
+              <label for="email" class="text-sm font-medium section-5"
+                >Email</label
+              >
               <input
                 type="email"
                 id="email"
-                class="border border-white/50 rounded h-12 px-4 bg-transparent 
+                class="border border-white/50 rounded h-12 px-4 bg-transparent
                 placeholder-white/30 focus:outline-none
                  focus:ring-2 focus:ring-white/60
                   transition
-                  section-5
-                  "
+                  section-5"
                 placeholder="tucorreo@ejemplo.com"
               />
 
-              <label for="mensaje" class="text-sm font-medium section-5">Mensaje</label>
+              <label for="mensaje" class="text-sm font-medium section-5"
+                >Mensaje</label
+              >
               <textarea
                 id="mensaje"
                 rows="5"
@@ -288,11 +312,10 @@ import Image from "astro/components/Image.astro";
                    section-5"
                 placeholder="Escribe tu mensaje..."></textarea>
               <button
-                class="w-50 p-2 font-[Montserrat] font-medium mt-2 
+                class="w-50 p-2 font-[Montserrat] font-medium mt-2
                 bg-black border border-white
                  rounded-lg
-                 section-5
-                 "
+                 section-5"
               >
                 Enviar mensaje
               </button>
@@ -303,7 +326,9 @@ import Image from "astro/components/Image.astro";
           <div
             class="border border-white/50 p-8 rounded-lg font-[Montserrat] flex flex-col gap-4"
           >
-            <h5 class="text-2xl font-medium section-5">Información de contacto</h5>
+            <h5 class="text-2xl font-medium section-5">
+              Información de contacto
+            </h5>
             <ul class="flex flex-col gap-7">
               <li class="section-5">fl0r1d4.d4t4@gmail.com</li>
               <li class="section-5">+52 55 4360 1501</li>
