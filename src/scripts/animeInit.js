@@ -126,7 +126,7 @@ const animateSection4 = animate('.section-4',{
     container: document.body,
     enter: "center center-=100",
     leave: "top+=330 center-=40",
-    debug:true,
+    
     sync:true,
   }),
 })
@@ -141,7 +141,6 @@ const animateSection5 = animate('.section-5',{
     container: document.body,
     enter: "center center+=100",
     leave: "top+=330 center+=240",
-    debug:true,
     sync:true,
   }),
 })
