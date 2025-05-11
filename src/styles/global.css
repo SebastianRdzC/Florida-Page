@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light-bulb {
+    box-shadow: 100px 100px 150px 75px rgba(172, 122, 227, 0.2);
+}
+
+
+
+html {
+    overflow: scroll;
+    /* o auto si prefieres */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+

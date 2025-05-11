@@ -1,0 +1,19 @@
+{
+  "name": "c-users-m-onedrive-escritorio-as",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "@tailwindcss/vite": "^4.1.5",
+    "animejs": "^4.0.2",
+    "astro": "^5.7.10",
+    "lenis": "^1.3.1",
+    "tailwindcss": "^4.1.5"
+  }
+}

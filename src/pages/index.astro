@@ -1,0 +1,344 @@
+---
+import "../styles/global.css";
+import startImage from "../assets/StartImage.jpg";
+import Image from "astro/components/Image.astro";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Florida</title>
+  </head>
+  <body class="bg-[#000] text-white font-sans scroll-smooth">
+    <nav
+      class="flex justify-between items-center p-4 w-full fixed nav-animate origin-bottom opacity-0 z-1"
+    >
+      <h4 class="font-thin text-sm text-white" style="letter-spacing: 0.2em;">
+        Desarrolladora de Software
+      </h4>
+
+      <ul class="flex gap-5 text-sm text-[Montserrat] font-thin pr-30">
+        <li>Inicio</li>
+        <li>Proyectos</li>
+        <li>Acerca de</li>
+        <li>Contactanos</li>
+      </ul>
+    </nav>
+
+    <section
+      class="relative h-screen w-full flex flex-col items-center justify-center pt-20 pb-20 px-4 section-1"
+    >
+      <h1
+        class="text-9xl font-[Prata] transform-to-span text-header fixed top-4 left-[50] opacity-0 z-1"
+      >
+        Florida
+      </h1>
+      <div class="mt-8 text-center space-y-2 relative z-1">
+        <div class="flex flex-col w-95 h-20 mt-40">
+          <div class="flex flex-row justify-between text-lg text-white">
+            <p
+              class="text-justify tracking-wide leading-tight text-secondary font-thin m-0 p-0 transform-to-span opacity-0"
+            >
+              Revolucionamos
+            </p>
+            <p
+              class="text-justify tracking-wide leading-tight text-secondary font-thin m-0 p-0 transform-to-span opacity-0"
+            >
+              con
+            </p>
+            <p
+              class="text-justify tracking-wide leading-tight text-secondary font-thin m-0 p-0 transform-to-span opacity-0"
+            >
+              Software
+            </p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <p
+              class="text-justify tracking-wide leading-tight text-secondary font-thin m-0 p-0 transform-to-span opacity-0"
+            >
+              Talento
+            </p>
+            <p
+              class="text-justify tracking-wide leading-tight text-secondary font-thin m-0 p-0 transform-to-span opacity-0"
+            >
+              Crudo
+            </p>
+          </div>
+        </div>
+      </div>
+      <section
+        class="video-wrapper absolute left-0 top-0 w-full h-screen object-cover -z-0 pointer-events-none"
+      >
+        <canvas class="w-full h-full p-0 w-0"></canvas>
+      </section>
+    </section>
+    <section class="h-30 flex justify-center bg-black flex-col"></section>
+    <section
+      class="h-screen z-0 flex justify-center items-center px-20 mt-60 relative w-full h-full section-2-target"
+    >
+      <div
+        class="grid grid-rows-2 grid-cols-[1fr_1fr] grid-cols-3
+         grid-cols-[3fr_1fr_2fr]
+         w-full justify-center
+         items-center flex-col
+         gap-y-5"
+      >
+        <div
+          class="flex w-full justify-center items-center col-span-3 px-2 flex-col"
+        >
+          <h4
+            class="text-5xl text-white font-[Prata] font-normal
+             tracking-widest self-start
+              leading-17 pr-30
+               transform-to-span third-text
+               origin-transform-bottom"
+          >
+            Creamos experiencias digitales que trascienden los limites de lo
+          </h4>
+
+          <h4
+            class="text-5xl text-white font-[Prata] font-normal tracking-widest leading-17 pr-30 self-start transform-to-span third-text"
+          >
+            convencional
+          </h4>
+        </div>
+        <div
+          class="w-full h-full flex flex-col
+           text-xl font-[Montserrat] tracking-wide
+            leading-10 px-5 justify-center
+             items-center gap-5
+             first-grid
+              cell-grid
+             "
+        >
+          <p class="pr-30">
+            En Florida, fusionamos diseño y tecnología para crear soluciones
+            infinitamente creativas. Nuestro enfoque se basa en la innovacion
+            constante y la atención al cliente
+          </p>
+          <p class="pr-30">
+            Cada proyecto es una oportunidad para explorar nuevas posibilidades
+            y superar expectativas
+          </p>
+        </div>
+        <div class="flex flex-col justify-between
+         h-full w-full items-center
+         second-grid
+         cell-grid
+        ">
+          <div class="flex flex-col w-full gap-4">
+            <h5 class="uppercase">Fundada</h5>
+            <span class="text-2xl font-[Montserrat] font-medium"> 2023 </span>
+          </div>
+          <div class="flex flex-col w-full gap-4">
+            <h5 class="uppercase">Ubicación</h5>
+            <span class="text-xl font-[Montserrat] font-medium"
+              >CdMx, México</span
+            >
+          </div>
+        </div>
+        <div class="flex justify-center 
+        items-center relative
+        third-grid
+        cell-grid
+        ">
+          <svg
+            class="w-full absolute mb-30"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="w-full h-full"
+              d="M18.1777 8C23.2737 8 23.2737 16 18.1777 16C13.0827 16 11.0447 8 5.43875 8C0.85375 8 0.85375 16 5.43875 16C11.0447 16 13.0828 8 18.1788 8H18.1777Z"
+              stroke="currentColor"
+              stroke-width=".1"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- aca esta la segunda seccion -->
+    <section class="h-50 flex justify-center bg-black flex-col"></section>
+    <section class="h-screen flex justify-center bg-black flex-col">
+      <!-- Aqui inicia -->
+      <div class="flex w-full flex-col px-30 mt-30 gap-2">
+        <span class="text-[Montserrat] text-white/80 text-lg section-3-text">
+          Nuestro trabajo
+        </span>
+        <h5 class="text-4xl font-[Montserrat] font-bold section-3-text">Proyectos</h5>
+      </div>
+      <!-- Aqui empieza el section que deberia ser ser un flex-row -->
+      <section class="w-full h-[80%] flex mt-20 px-10 gap-6">
+        <!-- Aca empieza el div que tiene toda la fakin info, primer columna -->
+        <div class="w-full flex flex-col gap-5">
+          <div class="w-full flex flex-col gap-2">
+            <span class="text-[Montserrat] text-white/80 text-lg section-3-text">
+              Proyecto 1
+            </span>
+            <h5 class="text-5xl font-[Montserrat] font-bold section-3-text">
+              Data for Dummies
+            </h5>
+          </div>
+
+          <div class="w-full">
+            <p class="text-xl font-[Montserrat] tracking-wide leading-10 section-3-text">
+              Una plataforma inteligente diseñada para democratizar el análisis
+              de datos. Combinando un diseño intuitivo con inteligencia
+              artificial, transforma información compleja en explicaciones
+              simples, visuales e interactivas
+            </p>
+          </div>
+        </div>
+        <!-- Aca empieza la segunda columna con la fakin imagen -->
+        <section class="h-30 flex justify-center bg-black flex-col"></section>
+        <div class="w-full justify-start ">
+          <img src="/images/image.png" alt="" class="rounded-lg section-3-text" />
+        </div>
+      </section>
+    </section>
+
+    <section class="w-full h-screen flex justify-center px-30">
+      <div class="w-full flex mt-40 justify-center items-center">
+        <div class="w-[45%]">
+          <img src="/images/about.jpg" class="section-4" alt="" />
+        </div>
+        <div class="w-[55%] flex flex-col justify-center p-20 gap-5">
+          <div class="w-full flex flex-col gap-2">
+            <span class="text-[Montserrat] text-white/80 section-4 text-lg">
+              ¿Quiénes somos?
+            </span>
+            <h5 class="text-5xl font-[Montserrat] font-bold section-4">Acerca de</h5>
+          </div>
+          <div class="w-full">
+            <p class="text-xl font-[Montserrat] tracking-wide leading-10 section-4">
+              En Florida desarrollamos soluciones de software intuitivas,
+              escalables y personalizables que permiten a las empresas optimizar
+              sus procesos y tomar decisiones más inteligentes. Nuestra misión
+              es transformar ideas en herramientas digitales que impulsen la
+              eficiencia, el crecimiento y la innovación. Apostamos por la
+              inclusión, la responsabilidad social y el bienestar de nuestro
+              equipo, mientras construimos relaciones de confianza con nuestros
+              clientes y nos posicionamos como un motor tecnológico en México.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-40 flex justify-center bg-black flex-col"></section>
+    <footer
+      class="h-screen w-full flex flex-col justify-center items-center mt-100 px-40"
+    >
+      <div class="w-full flex flex-col gap-2 justify-center items-center">
+        <span class="text-[Montserrat] text-white/80 text-lg section-5"> Hablemos </span>
+        <h5 class="text-5xl font-[Montserrat] font-bold section-5">Contáctanos</h5>
+      </div>
+      <div class="w-full flex mt-40 font-[Montserrat]">
+        <div class="w-[45%] flex flex-col items-center">
+          <h5 class="text-2xl section-5">
+            ¿Tienes un proyecto en mente? Estamos listos para convertir tu
+            visión en realidad
+          </h5>
+          <div class="mt-6 w-full">
+            <form
+              action=""
+              class="w-full flex flex-col gap-4 w-full justify-start text-white"
+            >
+              <label for="nombre" class="text-sm font-medium section-5">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                class="border border-white/50 rounded h-12 px-4 
+                bg-transparent placeholder-white/30
+                 focus:outline-none focus:ring-2
+                  focus:ring-white/60 transition
+                  section-5"
+                placeholder="Tu nombre"
+              />
+
+              <label for="email" class="text-sm font-medium section-5">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="border border-white/50 rounded h-12 px-4 bg-transparent 
+                placeholder-white/30 focus:outline-none
+                 focus:ring-2 focus:ring-white/60
+                  transition
+                  section-5
+                  "
+                placeholder="tucorreo@ejemplo.com"
+              />
+
+              <label for="mensaje" class="text-sm font-medium section-5">Mensaje</label>
+              <textarea
+                id="mensaje"
+                rows="5"
+                class="border border-white/50 rounded px-4 py-2 bg-transparent
+                 placeholder-white/30 focus:outline-none
+                  focus:ring-2 focus:ring-white/60
+                   transition resize-none
+                   section-5"
+                placeholder="Escribe tu mensaje..."></textarea>
+              <button
+                class="w-50 p-2 font-[Montserrat] font-medium mt-2 
+                bg-black border border-white
+                 rounded-lg
+                 section-5
+                 "
+              >
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="w-[55%] flex flex-col items-center px-20 gap-5">
+          <div
+            class="border border-white/50 p-8 rounded-lg font-[Montserrat] flex flex-col gap-4"
+          >
+            <h5 class="text-2xl font-medium section-5">Información de contacto</h5>
+            <ul class="flex flex-col gap-7">
+              <li class="section-5">fl0r1d4.d4t4@gmail.com</li>
+              <li class="section-5">+52 55 4360 1501</li>
+              <li class="section-5">
+                Mar Mediterráneo 227, Nextitla, Miguel Hidalgo, 11420 Ciudad de
+                México, CDMX
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-50 w-full flex flex-col">
+        <div class="w-full flex justify-between">
+          <h5>F L O R I D A</h5>
+          <ul class="flex gap-4">
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Linkedin</li>
+            <li>X</li>
+          </ul>
+        </div>
+        <div class="w-full h-px bg-white/30 my-8"></div>
+        <div class="w-full flex justify-between font-medium">
+          <h5>® 2025 Florida. Todos los derechos reservados</h5>
+          <ul class="flex gap-4">
+            <li>Politica de privacidad</li>
+            <li>Términos de servicio</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/src/scripts/animeInit.js"></script>
+  <script src="/src/scripts/Canvas.js"></script>
+  <script>
+    import "/src/scripts/lenis.js";
+  </script>
+</html>
