@@ -141,6 +141,6 @@ const animateSection5 = animate('.section-5',{
     container: document.body,
     enter: "center top",
     leave: "top+=330 bottom+=1140",
-    debug:true
+    
   }),
 })
