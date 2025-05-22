@@ -80,9 +80,9 @@ const animateThirdText = animate(".animate-third-text", {
   autoplay: onScroll({
     container: document.body,
     sync: true,
-    
     enter: "center center",
-    leave: "top+=100 center",
+    leave: "top+=160 center",
+    
   }),
 });
 
@@ -93,9 +93,9 @@ const animateFirstGrid = animate(".cell-grid", {
   delay: (_, i) => i * 160,
   autoplay: onScroll({
     container: document.body,
-    enter: "center center-=100",
-    leave: "top+=330 center-=100",
-    sync:true,
+    enter: "center top-=100",
+    leave: "top+=330 bottom+=100",
+    
   }),
 });
 
@@ -108,9 +108,9 @@ const animateSection3 = animate('.section-3-text',{
   delay: (_, i) => i * 160,
   autoplay: onScroll({
     container: document.body,
-    enter: "center center-=100",
-    leave: "top+=330 center+=100",
-    sync:true,
+    enter: "center top-=100",
+    leave: "top+=330 bottom+=550",
+    
   }),
 })
 
@@ -119,15 +119,15 @@ const animateSection3 = animate('.section-3-text',{
 
 const animateSection4 = animate('.section-4',{
   opacity: [0, 1],
-  duration: 300,
+  duration: 400,
   ease: "in",
-  delay: (_, i) => i * 160,
+  delay: (_, i) => i * 60,
   autoplay: onScroll({
     container: document.body,
-    enter: "center center-=100",
-    leave: "top+=330 center-=40",
+    enter: "center top-=100",
+    leave: "top+=330 bottom+=240",
     
-    sync:true,
+    
   }),
 })
 
@@ -136,11 +136,11 @@ const animateSection5 = animate('.section-5',{
   opacity: [0, 1],
   duration: 300,
   ease: "in",
-  delay: (_, i) => i * 160,
+  delay: (_, i) => i * 60,
   autoplay: onScroll({
     container: document.body,
-    enter: "center center+=100",
-    leave: "top+=330 center+=240",
-    sync:true,
+    enter: "center top",
+    leave: "top+=330 bottom+=1140",
+    debug:true
   }),
 })
